@@ -1,3 +1,8 @@
-/* Small reusable UI details */
-:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 4px; }
-::selection { background: var(--color-accent); color: #fff; }
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+}
+::selection {
+  background: var(--color-accent);
+  color: #fff;
+}
