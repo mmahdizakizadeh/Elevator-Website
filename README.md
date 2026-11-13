@@ -1,38 +1,47 @@
-# وب‌سایت آرمان | مهندسی حرکت عمودی
+# Vertical Motion | Elevator Engineering
 
-وب‌سایت نمونه و تک‌صفحه‌ای فارسی برای معرفی شرکت خدمات آسانسور؛ پیاده‌سازی‌شده با HTML، CSS و Vanilla JavaScript.
+A sample, single-page Persian website introducing an elevator services company, built with HTML, CSS, and Vanilla JavaScript.
 
-## اجرا
-1. پوشه پروژه را از حالت ZIP خارج کنید.
-2. پوشه `Elevator-Website` را در Visual Studio Code باز کنید.
-3. فایل `index.html` را در مرورگر باز کنید. برای تجربه بهتر توسعه می‌توانید از افزونه Live Server استفاده کنید.
+## Getting Started
 
-هیچ Backend، دیتابیس، نصب پکیج یا فرایند Build لازم نیست.
+1. Extract the project folder from the ZIP archive.
+2. Open the `Elevator-Website` folder in Visual Studio Code.
+3. Open `index.html` in your browser. For a better development experience, you can use the Live Server extension.
 
-## ساختار
-- `index.html`: تمام محتوای تک‌صفحه‌ای
-- `css/variables.css`: رنگ‌ها، تایپوگرافی، فاصله‌ها و سایر Design Tokens
-- `css/style.css`: استایل‌های اصلی
-- `css/components.css`: جزئیات و قواعد مشترک اجزای رابط کاربری
-- `css/responsive.css`: استایل نمایشگرهای کوچک و متوسط
-- `js/theme.js`: مدیریت حالت روشن و تاریک
-- `js/main.js`: منوی موبایل و انیمیشن ورود بخش‌ها
+No backend, database, package installation, or build process is required.
 
-## شخصی‌سازی رنگ‌ها
-برای تغییر پالت، مقادیر فایل `css/variables.css` را در بخش `:root` و `html[data-theme="dark"]` ویرایش کنید. رنگ‌های کامپوننت‌ها از این متغیرها استفاده می‌کنند.
+## Project Structure
 
-## اطلاعات نمونه
-نام «آرمان»، تصاویر، توضیحات پروژه‌ها و اطلاعات تماس فعلی صرفاً محتوای نمونه هستند. پیش از انتشار، آن‌ها را با اطلاعات واقعی شرکت جایگزین کنید:
-- شماره ثابت و موبایل در بخش Footer
-- ایمیل نمونه `info@example.com`
-- نشانی و مقصد Google Maps
-- تصاویر و توضیحات نمونه پروژه‌ها
+- `index.html`: Contains all single-page website content.
+- `css/variables.css`: Defines colors, typography, spacing, and other design tokens.
+- `css/style.css`: Contains the main styles.
+- `css/components.css`: Defines shared UI component styles and rules.
+- `css/responsive.css`: Contains styles for small and medium screen sizes.
+- `js/theme.js`: Handles light and dark theme switching.
+- `js/main.js`: Manages the mobile navigation menu and section reveal animations.
 
-## تصاویر و فونت
-تصاویر از آدرس‌های Unsplash و فونت Vazirmatn از Google Fonts بارگذاری می‌شوند؛ بنابراین برای نمایش این منابع، اتصال اینترنت لازم است. برای انتشار مستقل، تصاویر را در پوشه `img` ذخیره و مسیرهای آن‌ها را در HTML جایگزین کنید.
+## Customizing Colors
 
-## نکات
-- لینک `tel:` برنامه تماس دستگاه را با شماره آماده باز می‌کند.
-- لینک `mailto:` برنامه ایمیل را با آدرس گیرنده باز می‌کند؛ متن و موضوع آماده ندارد.
-- لینک نقشه در حال حاضر مقصد نمونه تهران دارد و باید با نشانی دقیق شرکت جایگزین شود.
-- هیچ فرم، دریافت اطلاعات، ذخیره‌سازی شرکتی یا Backend در پروژه وجود ندارد.
+To customize the color palette, edit the values in `css/variables.css` under the `:root` and `html[data-theme="dark"]` selectors. Component colors are derived from these variables.
+
+## Sample Content
+
+The name "Arman", images, project descriptions, and current contact details are sample content only. Replace them with the company's actual information before publishing:
+
+- Landline and mobile phone numbers in the footer.
+- Sample email address: `info@example.com`
+- Company address and Google Maps destination.
+- Sample project images and descriptions.
+
+## Images and Fonts
+
+Images are loaded from Unsplash URLs, and the Vazirmatn font is loaded through Google Fonts. An internet connection is therefore required to access these external resources.
+
+For a fully self-contained deployment, download the images into the `img` folder and update their paths in the HTML file.
+
+## Notes
+
+- The `tel:` link opens the device's calling application with the phone number prefilled.
+- The `mailto:` link opens the user's email application with the recipient address prefilled. No subject or message body is included.
+- The map link currently points to a sample location in Tehran and should be updated with the company's exact address.
+- The project does not include any forms, data collection, company-side data storage, or backend functionality.
