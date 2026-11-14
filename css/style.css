@@ -219,7 +219,6 @@ img {
   align-items: center;
   gap: clamp(18px, 3vw, 42px);
   margin-inline-start: auto;
-  
 }
 
 .main-nav a {
@@ -230,7 +229,7 @@ img {
   font-size: var(--font-size-sm);
   transition:
     color var(--transition-fast),
-    transform var(--transition-slow);
+    transform var(--transition-normal);
 }
 
 .main-nav a::after {
@@ -551,6 +550,7 @@ h2 em {
   color: var(--color-text-muted);
   line-height: 2.2;
 }
+
 .circle-link {
   display: grid;
   place-items: center;
@@ -563,7 +563,7 @@ h2 em {
   font-size: 1.4rem;
   transition:
     background var(--transition-fast),
-    transform var(--transition-fast);
+    transform var(--transition-slow);
 }
 
 .intro-aside {
@@ -601,9 +601,11 @@ h2 em {
   color: var(--color-text-muted);
   line-height: 2.2;
 }
+
 .service-list {
   border-top: 1px solid var(--color-border);
 }
+
 .service-row {
   display: grid;
   grid-template-columns: 90px 1fr 60px;
@@ -613,7 +615,8 @@ h2 em {
   border-bottom: 1px solid var(--color-border);
   transition:
     padding var(--transition-normal),
-    background var(--transition-fast);
+    background var(--transition-normal),
+    trasform var(--transition-normal);
 }
 
 .service-number {
@@ -874,8 +877,8 @@ h2 em {
   border-bottom: 1px solid var(--footer-border);
   color: var(--footer-title);
   transition:
-    padding var(--transition-fast),
-    color var(--transition-fast);
+    padding var(--transition-normal),
+    color var(--transition-normal);
 }
 
 .contact-link span {
@@ -936,10 +939,12 @@ h2 em {
     opacity 700ms ease,
     transform 700ms cubic-bezier(0.2, 0.7, 0.2, 1);
 }
+
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -986,13 +991,17 @@ h2 em {
       background: var(--color-surface-alt);
       transform: rotate(-45deg);
     }
+
     .service-row:hover {
+      transform: translate(-4px, 4px);
       padding-inline: 18px;
       background: var(--color-surface);
     }
-    .service-row:hover .service-arrow {
+
+    /* .service-row:hover .service-arrow {
       transform: translate(-4px, 4px);
-    }
+    } */
+
     .project-image:hover img {
       transform: scale(1.045);
       filter: saturate(1);
