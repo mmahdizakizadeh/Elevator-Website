@@ -767,39 +767,48 @@ h2 em {
   color: var(--color-text-muted);
   font-size: var(--font-size-xs);
 }
+
 .project-item h3 {
   margin: 7px 0 0;
   color: var(--color-primary-strong);
   font-size: 1.2rem;
   font-weight: 600;
 }
+
 .sample-note {
   color: var(--color-text-muted);
   font-size: var(--font-size-xs);
 }
+
 .projects > .container > .sample-note {
   margin-top: 40px;
 }
+
 .journal {
   background: var(--color-surface-alt);
 }
+
 .journal-grid {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
   gap: 100px;
 }
+
 .journal-intro h2 {
   margin-top: 28px;
 }
+
 .journal-intro > p {
   max-width: 340px;
   margin-top: 28px;
   color: var(--color-text-muted);
   line-height: 2.2;
 }
+
 .journal-list {
   border-top: 1px solid var(--color-border);
 }
+
 .journal-item {
   display: grid;
   grid-template-columns: 100px 1fr 30px;
